@@ -1,0 +1,5 @@
+/home/lensz/Proyectos/stockflow/stockflow/src/main/java/com/stockflow/App.java
+/home/lensz/Proyectos/stockflow/stockflow/src/main/java/com/stockflow/controller/ProductoController.java
+/home/lensz/Proyectos/stockflow/stockflow/src/main/java/com/stockflow/model/Producto.java
+/home/lensz/Proyectos/stockflow/stockflow/src/main/java/com/stockflow/repository/ProductoRepository.java
+/home/lensz/Proyectos/stockflow/stockflow/src/main/java/com/stockflow/service/ProductoService.java
