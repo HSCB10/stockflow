@@ -2,6 +2,7 @@ package com.stockflow.controller;
 
 import com.stockflow.model.Producto;
 import com.stockflow.service.ProductoService;
+import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -29,12 +30,12 @@ public class ProductoController {
     }
 
     @PostMapping
-    public ResponseEntity<Producto> crear(@RequestBody Producto producto) {
+    public ResponseEntity<Producto> crear(@Valid @RequestBody Producto producto) {
         return ResponseEntity.status(HttpStatus.CREATED).body(service.crear(producto));
     }
 
     @PutMapping("/{id}")
-    public Producto actualizar(@PathVariable Long id, @RequestBody Producto producto) {
+    public Producto actualizar(@PathVariable Long id, @Valid @RequestBody Producto producto) {
         return service.actualizar(id, producto);
     }
 
